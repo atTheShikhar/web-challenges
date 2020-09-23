@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600;700&display=swap');
+
+* {
+	box-sizing: border-box;
+	font-family: 'Spartan', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-image: url(./images/bg-pattern-top-mobile.svg),
+				url(./images/bg-pattern-bottom-mobile.svg);
+	background-position: top, bottom;
+	background-repeat: no-repeat,no-repeat;
+	background-size: contain;
+}
+.main {
+	padding: 0 25px;
+	margin: 100px 0 85px;
+}
+.header {
+	text-align: center;
+	margin-top: 100px;
+}
+.header-heading {
+	color: hsl(300, 43%, 22%);
+	margin: 20px;
+	font-size: 1.95rem;
+	line-height: 1.95rem;
+}
+.header-body {
+	font-size: 14px;
+	line-height: 25px;
+	color: hsl(303, 10%, 53%);
+	font-weight: 500;
+}
+.rating {
+	display: flex;
+	flex-direction: column;
+	margin: 30px 0;
+}
+.rating-block {
+	text-align: center;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	background-color: hsl(300, 24%, 96%);
+	margin: 8px 0;
+	padding: 10px 0;
+}
+.rating-comment {
+	color: hsl(300, 43%, 22%);
+	font-weight: 700;
+	font-size: 13px;
+	margin: 5px;
+}
+.rating-stars {
+	margin: 5px;
+}
+.card-wrapper {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+}
+.card {
+	background-color: hsl(300, 43%, 22%);
+	color: hsl(300, 24%, 96%);
+	border-radius: 10px;
+	padding: 30px 30px;
+	margin-bottom: 15px;
+}
+.card-header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 20px;  
+}
+.card-image {
+	border-radius: 50%;
+	height: 40px;
+	width: auto;
+	margin-right: 20px;  
+}
+.customer {
+	font-size: 13px;
+}
+.customer-status {
+	margin-top: 5px;
+	color: hsl(333, 80%, 67%);
+	opacity: 0.9;
+}
+.card-body {
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 1.82em;
+	color: hsl(300, 24%, 96%);
+}
+
+@media screen and (min-width: 375px) {
+	body {
+	background-image:url(./images/bg-pattern-bottom-desktop.svg),
+				url(./images/bg-pattern-top-desktop.svg);
+	background-position: bottom right, top left;
+	background-repeat: no-repeat,no-repeat;
+	}
+	.main {
+		margin: 0 90px; 
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.top {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.header {
+		width: 35%;
+		text-align: left;
+		margin: 0;
+	}
+	.header-heading {
+		margin-left: 0; 
+		font-size: 3em;
+		line-height: 1em;
+	}
+	.rating {
+		width: 50%;
+		margin: 25px;
+	}
+	.rating-block {
+		flex-direction: row;
+		width: 30vw;
+		padding: 15px;
+		justify-content: center;
+	}
+	.card-wrapper {
+		flex-direction: row;
+	}
+	.card {
+		margin-right: 30px;
+	}
+	.card:last-child {
+		margin-right: 0;
+	}
+}
