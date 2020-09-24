@@ -95,7 +95,7 @@ body {
 	color: hsl(300, 24%, 96%);
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 800px) {
 	body {
 	background-image:url(./images/bg-pattern-bottom-desktop.svg),
 				url(./images/bg-pattern-top-desktop.svg);
@@ -103,12 +103,7 @@ body {
 	background-repeat: no-repeat,no-repeat;
 	}
 	.main {
-		margin: 0 90px; 
-		height: 100vh;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+		margin: 8vh 8vw; 
 	}
 	.top {
 		width: 100%;
@@ -123,17 +118,17 @@ body {
 	}
 	.header-heading {
 		margin-left: 0; 
-		font-size: 3em;
+		font-size: 2.9em;
 		line-height: 1em;
 	}
 	.rating {
 		width: 50%;
-		margin: 25px;
 	}
 	.rating-block {
 		flex-direction: row;
-		width: 30vw;
+		width: 35vw;
 		padding: 15px;
+		margin: 10px 0;
 		justify-content: center;
 	}
 	.card-wrapper {
@@ -141,6 +136,7 @@ body {
 	}
 	.card {
 		margin-right: 30px;
+		margin-bottom: 0;
 	}
 	.card:last-child {
 		margin-right: 0;
