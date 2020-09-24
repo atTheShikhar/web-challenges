@@ -98,7 +98,7 @@ body {
 @media screen and (min-width: 800px) {
 	body {
 	background-image:url(./images/bg-pattern-bottom-desktop.svg),
-				url(./images/bg-pattern-top-desktop.svg);
+				url(./images/bg-pattern-top-mobile.svg);
 	background-position: bottom right, top left;
 	background-repeat: no-repeat,no-repeat;
 	}
@@ -126,10 +126,19 @@ body {
 	}
 	.rating-block {
 		flex-direction: row;
-		width: 35vw;
+		width: 30vw;
 		padding: 15px;
 		margin: 10px 0;
 		justify-content: center;
+		position: relative;
+	}
+	.rating-block:nth-child(2) {
+		position: relative;
+		left: 3em;
+	}
+	.rating-block:last-child {
+		position: relative;
+		left: 6em;
 	}
 	.card-wrapper {
 		flex-direction: row;
@@ -137,8 +146,15 @@ body {
 	.card {
 		margin-right: 30px;
 		margin-bottom: 0;
+		position: relative;
+	}
+	.card:nth-child(2) {
+		position: relative;
+		top: 1em;
 	}
 	.card:last-child {
 		margin-right: 0;
+		position: relative;
+		top: 2em;
 	}
 }
