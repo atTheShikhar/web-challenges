@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Article preview component</title>
+  <script type="text/javascript">
+    function showTooltip() {
+      let currentDisplay = document.getElementById("share-opt").style.display;
+      if(currentDisplay == "none") {
+        document.getElementById("share-opt").style.display = "flex"; 
+        document.getElementById("button-share").classList.remove('share-button');
+        document.getElementById("button-share").classList.add('share-btn');
+        document.getElementById("foot").classList.add("footer-bg");
+      } else {
+        document.getElementById("share-opt").style.display = "none";
+        document.getElementById("button-share").classList.remove('share-btn');
+        document.getElementById("button-share").classList.add('share-button');
+        document.getElementById("foot").classList.remove("footer-bg");
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="article-wrapper">
+
+    <div class="article-image">
+      <img src="./images/drawers.jpg">
+    </div>
+
+    <div class="article">
+      <h2 class="article-heading">
+        Shift the overall look and feel by adding these wonderful 
+        touches to furniture in your home
+      </h2>
+
+      <p class="article-body">
+        Ever been in a room and felt like something was missing? Perhaps 
+        it felt slightly bare and uninviting. I’ve got some simple tips 
+        to help you make any room feel complete.
+      </p>  
+
+      <div class="footer" id="foot">
+        <div class="author">
+          <img src="./images/avatar-michelle.jpg" class="author-avatar">
+
+          <div class="author-info">
+            <span class="author-name">Michelle Appleton</span><br>
+            <span class="date">28 Jun 2020</span>
+          </div>  
+        </div>
+
+        <div class="share">
+          <div class="share-options" id="share-opt">
+            <div class="share-msg">SHARE</div>
+            <a href="#" class="facebook"><img src="./images/icon-facebook.svg"></a>
+            <a href="#" class="twitter"><img src="./images/icon-twitter.svg"></a>
+            <a href="#" class="pinterest"><img src="./images/icon-pinterest.svg"></a>
+          </div>
+
+          <button class="share-button" id="button-share" onclick="showTooltip();">
+            <img src="./images/icon-share.svg">
+          </button>
+        </div>
+      </div>     
+    </div>
+
+  </div>
+</body>
+</html>
