@@ -7,3 +7,6 @@ https://attheshikhar.github.io/web-challenges/social-proof-section/
 
 ## article-preview-component
 https://attheshikhar.github.io/web-challenges/article-preview-component/
+
+## fylo-data-storage-component
+https://attheshikhar.github.io/web-challenges/fylo-data-storage-component-master/
