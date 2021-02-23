@@ -18,7 +18,7 @@ body {
 	align-self: center;
 	display: flex;
 }
-//Outer frame
+/*Outer frame*/
 .frame {
 	width: 250px;
 	height: 500px;
@@ -31,7 +31,7 @@ body {
 	/*filter: drop-shadow(-20px 20px 20px rgba(0,0,0,25%));*/
 }
 
-//Snooze button
+/*Snooze button*/
 .frame::before {
 	content: "";
 	position: absolute;
@@ -42,7 +42,7 @@ body {
 	border-radius: 7px 0 0 7px;
 	/*border-bottom: solid 10px black; */
 }  
-//Volume+ button
+/*Volume+ button*/
 .frame::after {
 	content: "";
 	position: absolute;
@@ -62,7 +62,7 @@ body {
 	border-radius: 32px;
 	border: solid 7px #000000;
 }
-//Volume- button
+/*Volume- button*/
 .screen::after {
 	content: "";
 	position: absolute;
@@ -72,7 +72,7 @@ body {
 	border-bottom: solid 45px black;
 	border-radius: 7px 0 0 7px;
 }
-//Notch
+/*Notch*/
 .screen::before {
 	content: "";
 	position: absolute;
