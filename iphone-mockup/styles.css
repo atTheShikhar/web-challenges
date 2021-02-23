@@ -9,9 +9,9 @@ body {
 	display: flex;
 }
 .container {
-	height: 90vh;	
-	width: 50vw;
-	margin: auto;
+	height: 600px;	
+	width: 400px;
+	margin: auto;	
 	/*Change this to white for an additional container*/
 	background-color: #fafafa;
 	border-radius: 10px;
