@@ -54,11 +54,13 @@ body {
 } 
 .screen {
 	position: absolute;
+	display: flex;
 	left: 4px;
 	top: 4px;
 	width: 242px;
 	height: 492px;
-	background-image: linear-gradient(to bottom right, red, yellow);
+	/* background-image: linear-gradient(to bottom right, red, yellow); */
+	background-color: #fafafa;
 	border-radius: 32px;
 	border: solid 7px #000000;
 }
@@ -82,4 +84,8 @@ body {
 	height: 32px;
 	border-radius: 0px 0px 10px 10px;
 	background-color: #000000;
+}
+.logo {
+	width: 60px;
+	margin: auto;
 }
