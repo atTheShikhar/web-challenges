@@ -10,3 +10,6 @@ https://attheshikhar.github.io/web-challenges/article-preview-component/
 
 ## fylo-data-storage-component
 https://attheshikhar.github.io/web-challenges/fylo-data-storage-component-master/
+
+## iphone-mockup
+https://attheshikhar.github.io/web-challenges/iphone-mockup/
