@@ -1,6 +1,6 @@
 # web-challenges
 
-This repository is created just for practicing front end part of webpages.
+Just some of my frontend work :)
 
 ## social-proof-section
 https://attheshikhar.github.io/web-challenges/social-proof-section/
