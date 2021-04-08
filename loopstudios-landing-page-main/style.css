@@ -51,7 +51,7 @@ a {
 .top-nav nav {
     display: none;
     position: absolute;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     background-color: black;
     top: 0;
@@ -106,3 +106,39 @@ a {
     /* Font error fix(font has additional padding bottom) */
     padding-bottom: 24px;
 }
+
+.first-section-image {
+    border: solid 1px red;
+}
+.first-section {
+    border: solid 1px blue;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    min-height: 100vh;
+}
+.first-section-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.first-section-text {
+    width: 95%;
+    margin: 0 auto;
+}
+.first-section-text h2 { 
+    font-family: 'Josefin Sans',sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 300;
+    border: solid 1px green;
+}
+.first-section-text p {
+    font-family: 'Alata',sans-serif;
+    text-align: center;
+    color: hsl(0,0%,41%);
+    border: solid 1px black;
+}
+
