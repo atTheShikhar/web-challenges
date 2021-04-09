@@ -102,19 +102,16 @@ a {
     color: white;
     text-transform: uppercase;
     padding: 32px;
-    font-size: 2.8rem;
+    font-size: 2.8em;
+    overflow-wrap: break-word;
     /* Font error fix(font has additional padding bottom) */
     padding-bottom: 24px;
 }
 
-.first-section-image {
-    border: solid 1px red;
-}
 .first-section {
-    border: solid 1px blue;
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content:center;
     align-items:center;
     min-height: 100vh;
 }
@@ -124,21 +121,105 @@ a {
     height: auto;
 }
 .first-section-text {
-    width: 95%;
+    width: 85%;
     margin: 0 auto;
 }
-.first-section-text h2 { 
+
+.heading { 
     font-family: 'Josefin Sans',sans-serif;
     text-transform: uppercase;
     text-align: center;
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     font-weight: 300;
-    border: solid 1px green;
+    overflow-wrap: break-word;
+}
+
+.first-section-text > h2 { 
+    margin: 3rem 0 1.85rem;
 }
 .first-section-text p {
     font-family: 'Alata',sans-serif;
     text-align: center;
-    color: hsl(0,0%,41%);
-    border: solid 1px black;
+    color: hsl(0,0%,55%);
+    font-size:1.20rem;
+    line-height: 2rem; 
 }
+
+.second-section > h2 {
+    margin-bottom: 2.5rem; 
+}
+.card-container h2 {
+    text-transform: uppercase;
+    font-family: 'Josefin Sans',sans-serif;
+    font-weight: 300;
+    font-size: 1.7rem;
+    color: white;
+    padding: 2em 0 0.8em 0.8em;
+    width: 50%;
+    background-image: linear-gradient(to right,rgba(0,0,0,0.6),rgba(0,0,0,0));
+}
+.deep-earth {
+    background: url('./images/mobile/image-deep-earth.jpg') ; 
+}
+.night-arcade {
+    background: url('./images/mobile/image-night-arcade.jpg') ;
+}
+.soccer-team {
+    background: url('./images/mobile/image-soccer-team.jpg') ;
+}
+.the-grid {
+    background: url('./images/mobile/image-grid.jpg') ;
+}
+.from-above {
+    background: url('./images/mobile/image-from-above.jpg') ;
+}
+.pocket-borealis {
+    background: url('./images/mobile/image-pocket-borealis.jpg') ;
+}
+.curiosity {
+    background: url('./images/mobile/image-curiosity.jpg') ;
+}
+.fisheye {
+    background: url('./images/mobile/image-fisheye.jpg') ;
+}
+.card-container > div {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: 1.5rem;
+}
+.second-section > div:last-child button {
+    display: block;
+    margin: auto;
+    border: solid 2px black;
+    font-family: 'Alata', sans-serif;
+    font-size:1.1rem;
+    padding: 0.6em 3em;
+    text-transform: uppercase;
+    background-color: white;
+    transition: all 250ms ease;
+    cursor: pointer;
+    margin-top: 2rem;
+    outline: none;
+}
+.second-section > div:last-child button:hover { 
+    background-color: black;
+    color: white;
+}
+
+footer {
+    border: solid 1px blue;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
