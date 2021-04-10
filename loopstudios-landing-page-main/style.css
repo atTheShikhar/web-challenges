@@ -114,6 +114,8 @@ a {
     justify-content:center;
     align-items:center;
     min-height: 100vh;
+    width: 100%;
+    margin: 1rem auto;
 }
 .first-section-image img {
     display: block;
@@ -136,27 +138,41 @@ a {
 
 .first-section-text > h2 { 
     margin: 3rem 0 1.85rem;
+    overflow-wrap: break-word;
 }
 .first-section-text p {
     font-family: 'Alata',sans-serif;
     text-align: center;
     color: hsl(0,0%,55%);
-    font-size:1.20rem;
-    line-height: 2rem; 
+    font-size:1rem;
+    line-height: 1.5rem; 
 }
 
+.second-section {
+    margin-bottom: 5rem;
+}
 .second-section > h2 {
     margin-bottom: 2.5rem; 
+}
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8,1fr);
+    gap: 1.5rem;
 }
 .card-container h2 {
     text-transform: uppercase;
     font-family: 'Josefin Sans',sans-serif;
     font-weight: 300;
-    font-size: 1.7rem;
+    font-size: 1.50rem;
     color: white;
-    padding: 2em 0 0.8em 0.8em;
-    width: 50%;
+    width: 45%;
+    height: 100%;
+    padding: 1.8em 0 0.8em 0.8em;
     background-image: linear-gradient(to right,rgba(0,0,0,0.6),rgba(0,0,0,0));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 .deep-earth {
     background: url('./images/mobile/image-deep-earth.jpg') ; 
@@ -182,18 +198,20 @@ a {
 .fisheye {
     background: url('./images/mobile/image-fisheye.jpg') ;
 }
+
 .card-container > div {
     background-repeat: no-repeat;
-    background-size: 100%;
-    margin-bottom: 1.5rem;
+    background-size: cover;
 }
+
 .second-section > div:last-child button {
     display: block;
     margin: auto;
     border: solid 2px black;
     font-family: 'Alata', sans-serif;
-    font-size:1.1rem;
-    padding: 0.6em 3em;
+    font-size:0.95rem;
+    letter-spacing: 0.35rem;
+    padding: 0.6em 2.6em;
     text-transform: uppercase;
     background-color: white;
     transition: all 250ms ease;
@@ -206,13 +224,35 @@ a {
     color: white;
 }
 
+
+/*Do Footer*/
 footer {
+    width: 100%;
+    font-family: 'Alata', sans-serif;
     border: solid 1px blue;
-    
+    padding: 3rem;
 }
-
-
-
+.footer-bg {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    min-height: 50%;
+    left: 0;
+    overflow: hidden;
+    background-color: black;
+    z-index: -1;
+}
+footer > div {
+}
+footer > div > img {
+    display: block;
+    margin: auto;
+}
+.copyright {
+    border: solid 1px red;
+    text-align:center;
+    color: hsl(0,0%,55%);
+}
 
 
 
