@@ -249,7 +249,6 @@ footer > div > img {
     margin: auto;
 }
 .copyright {
-    border: solid 1px red;
     text-align:center;
     color: hsl(0,0%,55%);
 }
