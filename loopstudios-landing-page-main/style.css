@@ -229,24 +229,38 @@ a {
 footer {
     width: 100%;
     font-family: 'Alata', sans-serif;
-    border: solid 1px blue;
     padding: 3rem;
-}
-.footer-bg {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    min-height: 50%;
-    left: 0;
-    overflow: hidden;
     background-color: black;
-    z-index: -1;
-}
-footer > div {
 }
 footer > div > img {
     display: block;
     margin: auto;
+}
+.nav-links {
+    margin: 2rem auto;
+}
+.nav-links > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-links > ul > li {
+    margin-bottom: 1.5rem;
+}
+.nav-links > ul > li:last-child {
+    margin-bottom: 0;
+}
+.social-links {
+    margin: 1.5rem auto;
+}
+.social-links > ul {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: space-around;
+}
+.social-links > ul > li > a > img {
+    display: block;
 }
 .copyright {
     text-align:center;
