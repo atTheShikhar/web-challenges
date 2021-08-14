@@ -7,7 +7,6 @@
 }
 
 .container {
-    /* border: solid 1px red; */
     margin: auto;
     width: 90%;
 }
@@ -59,7 +58,7 @@ a {
     z-index: 1;
 }
 .top-nav ul {
-    position: inherit;
+    position: absolute;
     top: 50%;
     left: 5%;
     transform: translateY(-50%);
@@ -77,7 +76,6 @@ a {
 }
 #show-nav {
     display: none;
-    
 }
 #show-nav:checked ~ nav {
     display: flex;
@@ -265,6 +263,62 @@ footer > div > img {
 .copyright {
     text-align:center;
     color: hsl(0,0%,55%);
+}
+
+@media screen and (min-width: 800px) {
+    .container {
+        max-width: 1080px;
+    }
+    .header-bg {
+        background: url(./images/desktop/image-hero.jpg) no-repeat;
+        filter: brightness(50%);
+    }
+    .top-nav > label{
+        display: none;
+    }   
+    .top-nav > nav {
+        display: block;
+        position: static;
+        height: auto;
+        width: auto;
+        background-color: unset;
+        z-index: 0;
+        flex-grow: 0.3;
+    }
+    .top-nav > nav > ul {
+        position: static;
+        transform: unset;
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: unset;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .top-nav li {
+        margin: 0;
+    }
+    .top-nav a:hover {
+        color: white;
+    }
+    .top-nav a {
+        position: relative;
+    }
+    .top-nav a:hover::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 25%;
+        height: 2px;
+        width: 50%;
+        margin: auto;
+        background-color: white;
+    }
+
+    .hero > div {
+        width: max(55%,600px);
+        font-size: 4em;
+    }
 }
 
 
